@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GÓLPRIMEX — Kapcsolat</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="logo-placeholder.svg" alt="GÓLPRIMEX logo" />
+      <h1>GÓLPRIMEX</h1>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Kezdőlap</a>
+      <a href="about.html">Rólunk</a>
+      <a href="contact.html">Kapcsolat</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Kapcsolatfelvétel</h2>
+    <p>Töltsd ki az űrlapot vagy írj nekünk emailt.</p>
+
+    <form id="contactForm" onsubmit="submitForm(event)">
+      <label>Neved<br><input type="text" name="name" required></label><br>
+      <label>Email<br><input type="email" name="email" required></label><br>
+      <label>Üzenet<br><textarea name="message" rows="6" required></textarea></label><br>
+      <button type="submit" class="btn">Küldés</button>
+    </form>
+
+    <div id="formResult" aria-live="polite"></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 GÓLPRIMEX</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
